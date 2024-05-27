@@ -34,7 +34,21 @@ const MyJobs = () => {
       });
   };
 
-
+  const handleJobUpdate = (data) => {
+    console.log(data);
+    fetch(`http://localhost:5000/updateJob/${data._id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.modifiedCount > 0) {
+          setControl(!control);
+        }
+        console.log(result);
+      });
+  };
 
   return (
     <div>
