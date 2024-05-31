@@ -42,20 +42,7 @@ function Footer() {
               </button>
             </form>
           </div>
-          <div className="col-md-4">
-            <h5>Follow Us</h5>
-            <div className="social-links">
-              <a href="https://www.linkedin.com/">
-                <FaLinkedin className="mr-2" />
-              </a>
-              <a href="https://twitter.com/">
-                <FaTwitterSquare className="mr-2" />
-              </a>
-              <a href="https://www.instagram.com/">
-                <FaInstagramSquare className="mr-2" />
-              </a>
-            </div>
-          </div>
+     
         </div>
         <div className="row mt-4">
           <div className="col-md-12 text-center">
